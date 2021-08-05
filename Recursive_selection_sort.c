@@ -42,7 +42,7 @@ int findminindex(int *arr , int n , int current)
             return tempmin;
         }
         
-        // else if element at minindex if smaller than element at tempmin , return minindex. 
+        // else if element at minindex is smaller than element at tempmin , return minindex. 
         else
         {
             return minindex;
