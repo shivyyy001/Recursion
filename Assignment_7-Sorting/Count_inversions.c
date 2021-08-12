@@ -13,7 +13,6 @@
 
 
 #include <stdio.h>
-#define int long long
 
 // Function to merge two sorted arrays.
 int mergeTwoSorted(int *a , int n , int start , int mid , int end)
@@ -131,7 +130,7 @@ int main()
 {
     printf("Enter number of elements in array \n");
     int n;
-    scanf("%lld" , &n);
+    scanf("%d" , &n);
 	
     // making an array of n size.
     int a[n];
@@ -139,14 +138,14 @@ int main()
     printf("Enter array elements \n");
     for(int i = 0 ; i < n ; i++)
     {
-        scanf("%lld" , &a[i]);
+        scanf("%d" , &a[i]);
     }
 	
     // Calling inversionCount function ->
     int answer = inversionCount(a , n);
 	
     // printing answer.
-    printf("Inversions count = %lld\n" , answer);
+    printf("Inversions count = %d\n" , answer);
 	
     return 1;
 
