@@ -103,7 +103,7 @@ int mergeSort(int *a , int n , int start , int end)
     // calculating inversion count for right array using recursion and putting in count.
     count += mergeSort(a , n , mid+1 , end);
     
-    // calculating inversion count while merging two sorted arrays.
+    // calculating inversion count while merging two sorted arrays and putting in count.
     count += mergeTwoSorted(a , n , start , mid , end);
     
     // returning count;
